@@ -1,0 +1,59 @@
+/* Life of a Cat Studio — shared styles. Warm, rounded, kid-friendly. */
+@font-face {
+  font-family: "Fredoka";
+  src: url("Fredoka.ttf") format("truetype");
+  font-display: swap;
+}
+:root {
+  --cream: #fff8ed;
+  --ink: #2b2320;
+  --orange: #ea7a1f;
+  --orange-soft: #fde8cf;
+  --sky: #2f7fb8;
+  --card: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Fredoka", "Segoe UI Rounded", "Segoe UI", system-ui, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+header .paw { font-size: 2.2rem; }
+h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  margin: 0.2rem 0 0.2rem;
+  color: var(--orange);
+  letter-spacing: 0.5px;
+}
+.tagline { font-size: 1.15rem; margin: 0 0 2rem; opacity: 0.85; }
+h2 { color: var(--sky); margin-top: 2.2rem; }
+.card {
+  background: var(--card);
+  border: 2px solid var(--orange-soft);
+  border-radius: 18px;
+  padding: 1.1rem 1.4rem;
+  margin: 1rem 0;
+}
+.cat { font-size: 1.6rem; margin-right: 0.4rem; }
+nav {
+  margin: 0 0 2.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--orange-soft);
+  border-radius: 12px;
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+nav a:hover { color: var(--orange); }
+footer {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+ul { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+.small { font-size: 0.9rem; }
